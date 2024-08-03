@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.YoneticiController">
+   <children>
+      <TabPane layoutX="100.0" layoutY="14.0" prefHeight="500.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab id="tab_dosya" fx:id="tab_dosya" text="Dosya">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #ffd700;">
+                     <children>
+                        <TableView fx:id="tableview_dosya" layoutX="66.0" layoutY="46.0" prefHeight="371.0" prefWidth="400.0" stylesheets="@application.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn id="tab_kul_ad" fx:id="column_dosya_kulad" prefWidth="200.0" text="Kullanıcı Adı" />
+                            <TableColumn id="tab_sifre" fx:id="column_dosya_sifre" prefWidth="199.0" text="Şifre" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab id="tab_duzenle" fx:id="tab_duzenle" text="Düzenle">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" stylesheets="@application.css">
+                     <children>
+                        <TextField fx:id="tabduzenle_kul_Ad" layoutX="169.0" layoutY="55.0" stylesheets="@application.css" />
+                        <PasswordField fx:id="tabduzenle_sifre" layoutX="169.0" layoutY="108.0" stylesheets="@application.css" />
+                        <Label layoutX="70.0" layoutY="57.0" prefHeight="21.0" prefWidth="88.0" text="Kullanıcı Adı:">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="108.0" layoutY="112.0" prefHeight="17.0" prefWidth="46.0" text="Şifre:">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Label>
+                        <Button fx:id="btn_duzenle_kul_guncelle" layoutX="127.0" layoutY="201.0" mnemonicParsing="false" onAction="#btn_duzenle_kul_guncelle" prefHeight="34.0" prefWidth="147.0" stylesheets="@application.css" text="Kullanıcıyı Güncelle">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btn_duzenle_kul_sil" layoutX="127.0" layoutY="255.0" mnemonicParsing="false" onAction="#btn_duzenle_kul_sil" prefHeight="34.0" prefWidth="148.0" stylesheets="@application.css" text="Kullanıcıyı Sil">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btn_yenile" layoutX="126.0" layoutY="307.0" mnemonicParsing="false" onAction="#btn_yenile_Click" prefHeight="36.0" prefWidth="148.0" stylesheets="@application.css" text="Yenile">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

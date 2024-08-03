@@ -1,0 +1,133 @@
+.button {
+  -fx-background-color: #d2691e;
+  -fx-border: 0 solid #e2e8f0;
+  -fx-border-radius: 1.5rem;
+  -fx-box-sizing: border-box;
+  -fx-color: #0d172a;
+  -fx-cursor: pointer;
+  -fx-display: inline-block;
+  -fx-font-family: "Basier circle",-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  -fx-font-size: 1.1rem;
+  -fx-font-weight: 600;
+  -fx-line-height: 1;
+  -fx-padding: 1rem 1.6rem;
+  -fx-text-align: center;
+  -fx-text-decoration: none #0d172a solid;
+  -fx-text-decoration-thickness: auto;
+  -fx-transition: all .1s cubic-bezier(.4, 0, .2, 1);
+  -fx-box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  -fx-user-select: none;
+  -fx--webkit-user-select: none;
+  -fx-touch-action: manipulation;
+}
+
+.button:hover {
+  -fx-background-color:#ffdab9;
+  -fx-color: #fff;
+}
+
+
+  .button {
+    -fx-font-size: 1.250rem;
+    -fx-padding: 1rem 2rem;
+  }
+  
+ 
+.table-view{
+	-fx-border-color: linear-gradient(to bottom right,#d2691e, #d2b48c);
+	-fx-border-width: 2px;
+	-fx-padding: 0px;
+	-fx-border-radius: 8px;
+	-fx-background-color: 	#ffefd5;
+}
+
+.table-view .table-column{
+	-fx-aligment: CENTER;
+}
+.table-view .column-header-background{
+	-fx-background-color: #ffefd5;
+	-fx-background-radius: 8px 8px 0px 0px;
+	-fx-background-insets: 0 0 0 0;
+}
+
+.table-view .column-header, .filter{
+	-fx-background-color: 	#ffefd5;
+	-fx-size:' 40px';
+}
+
+.text-area {
+    -fx-background-color: #ffefd5;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px;
+    -fx-font-size: 8pt;
+    -fx-font-family: "Arial";
+}
+
+.text-area .content {
+    -fx-background-color: #ffefd5;
+    -fx-padding: 10px;
+    -fx-text-fill: #333333;
+}
+
+.text-field {
+    -fx-background-color:  #ffefd5;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-padding: 5px;
+    -fx-font-size: 9pt;
+    -fx-font-family: "Arial";
+    -fx-prompt-text-fill: derive(-fx-control-inner-background, -30%);
+}
+
+.text-field:focused {
+    -fx-border-color:#ffefd5;
+    -fx-background-color: #ff8c00;
+}
+
+.date-picker .date-picker-popup {
+    -fx-background-color: #ffefd5;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-font-size: 8pt;
+    -fx-font-family: "Arial";
+}
+
+.date-picker .date-picker-popup > .month-year-pane {
+    -fx-background-color: #f0f0f0;
+}
+
+.date-picker .date-picker-popup > .day-cell {
+    -fx-background-color: #ffffff;
+}
+
+.date-picker .date-picker-popup > .day-cell:hover, 
+.date-picker .date-picker-popup > .day-cell:selected {
+    -fx-background-color: #d0eaff;
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: #d2b48c;
+    -fx-border-color: #d2b48c;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px 5px 0 0;
+    -fx-background-radius: 5px 5px 0 0;
+}
+
+.tab-pane .tab {
+    -fx-padding: 10px;
+    -fx-font-size: 8pt;
+    -fx-font-family: "Arial";
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color:#d2b48c;
+    -fx-border-color: #d2b48c;
+}
+
+.tab-pane .tab:hover {
+    -fx-background-color: #d2b48c;
+}
